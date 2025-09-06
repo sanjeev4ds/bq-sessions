@@ -1,0 +1,10 @@
+PROJECT_ID=bq-sessions-sanjeev
+INPUT_GCS_BUCKET=sanjeev-project-landing
+INPUT_GCS_DIRECTORY=NSE_stocks_5_min_sample/
+OUTPUT_GCS_DIRECTORY_LANDING=NSE_stocks_5_min_sample_landing/landing/
+OUTPUT_GCS_DIRECTORY_PROCESSED=NSE_stocks_5_min_sample/processed/
+GCS_URI_PATTERN=gs://sanjeev-project-landing/NSE_stocks_5_min_sample_landing/landing/*.csv
+BIGQUERY_RAW_TABLE=bq-sessions-sanjeev.sanjeev_project_raw.nse_stocks_5_min_sample
+BIGQUERY_RAW_TABLE_TEMP=bq-sessions-sanjeev.sanjeev_project_raw.nse_stocks_5_min_sample_temp
+GCS_TEMP_PARQUET_LANDING=gs://sanjeev-project-landing/NSE_stocks_5_min_sample_temp/landing/temp_nse_5_min.parquet
+BIGQUERY_CONSUME_TABLE=bq-sessions-sanjeev.sanjeev_project_consume.nse_stocks_5_min_sample
